@@ -30,8 +30,10 @@ body {
     justify-content: space-evenly;
   }
   #gameButtonArea{
+    margin-top:100px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
   
   #gameButtonArea > button {
@@ -52,6 +54,9 @@ body {
   #button4 {
       background: lightyellow;
   }
+#button5 {
+      background: white;
+  }
   
   #button1:active, #button1.lit {
       background:green;
@@ -65,15 +70,17 @@ body {
   #button4:active, #button4.lit{
       background:yellow;
   }
+#button5:active, #button5.lit{
+      background:black;
+  }
   
   .hidden {
     display: none;
   }
 
 #name{
-  position: absolute;
-  bottom: 10px;
   font-size: 20px;
-  margin-left: 20px;
+  text-align: center;
+  margin-top: 200px;
 }
   
