@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hello!</title>
+    <title>Codepath Glich game!</title>
     
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
@@ -22,10 +22,18 @@
     <p>
       Quick warning you may have to click a button twice or click start in order to hear sound.
     </p>
+    
+        
     <div id="starBtnArea">
       <button id="startBtn" onclick="startGame()">Start</button>
       <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
     </div>
+    
+    <hr>
+    <p id="timer">
+      Timer: <p id="time">click start!</p>
+    </p>
+  
     
     <div id="gameButtonArea">
       <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone();hidePic(1)"> <img id="t" class="hidden" src="https://cdn.glitch.com/ffb0ed47-2830-4a37-af2c-6137366f5807%2Ft.jpg?v=1615682880032" alt="takodachi"></button>
@@ -41,6 +49,7 @@
     <script src="https://button.glitch.me/button.js" defer></script>
     
     <footer>
+      <hr>
       <p>
         The images in buttons and the colors are themed off of Hololive EN!
       </p>

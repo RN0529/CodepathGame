@@ -4,7 +4,8 @@ const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 var chances = 3;
-
+var tim = 30;
+var mytimer;
 //Global Variables
 var pattern = [1, 2, 3, 4, 5, 1, 2, 5];
 var progress = 0;
@@ -20,7 +21,9 @@ var pic4 = document.getElementById("bb");
 var pic5 = document.getElementById("db");
 
 function startGame() {
+  mytimer = setInterval(Timer, 1000);
   context.resume();
+  tim = 30;
   //initialize game variables
   clueHoldTime = 1000; // restore clue hold time to the inital value
   progress = 0;
@@ -43,6 +46,7 @@ function startGame() {
 
 function stopGame() {
   gamePlaying = false;
+  clearInterval(mytimer);
   document.getElementById("stopBtn").classList.add("hidden");
   document.getElementById("startBtn").classList.remove("hidden");
 }
@@ -63,6 +67,7 @@ function playSingleClue(btn) {
 
 function playClueSequence() {
   guessCounter = 0;
+  tim=30;
   clueHoldTime = clueHoldTime - 50;
   let delay = nextClueWaitTime; //set delay to initial wait time
   for (let i = 0; i <= progress; i++) {
@@ -117,6 +122,10 @@ function guess(btn){
 function guess(btn) {
   console.log("user guessed: " + btn);
   context.resume();
+  if(gamePlaying){
+    tim++;
+    document.getElementById("time").innerHTML = tim.toString();
+  } 
 
   if (!gamePlaying) {
     return;
@@ -228,3 +237,12 @@ g.connect(context.destination);
 g.gain.setValueAtTime(0, context.currentTime);
 o.connect(g);
 o.start(0);
+
+function Timer() {
+  tim--;
+  if(tim==0){
+    loseGame();
+    return;
+  }
+  document.getElementById("time").innerHTML = tim.toString();
+}

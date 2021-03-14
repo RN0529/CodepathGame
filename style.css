@@ -21,6 +21,7 @@ body {
     font-size: 30px;
     margin-left:10%;
     margin-right: 10%;
+    line-height: 1.6;
   }
   button{
     padding: 20px;
@@ -30,6 +31,7 @@ body {
   #starBtnArea{
     display: flex;
     justify-content: space-evenly;
+    
   }
   #gameButtonArea{
     margin-bottom:100px;
@@ -90,4 +92,16 @@ body {
 img{
   height: 100px;
   width: 100px;
+}
+#timer{
+  color:black;
+}
+#time{
+  color:black;
+}
+hr{
+  margin-top:50px;
+  height: 4px;
+  color:black;
+  background-color:black;
 }
