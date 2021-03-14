@@ -41,6 +41,7 @@ Here's a walkthrough of implemented user stories:
 ![](https://i.imgur.com/LCkq0Vn.gif)
 
 My GIFs:
+
 ![](https://i.imgur.com/jXnzzSb.gif)
 ![](https://i.imgur.com/hGcPsqA.gif)
 ![](https://i.imgur.com/2WSKlhq.gif)
