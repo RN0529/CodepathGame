@@ -54,7 +54,7 @@ My GIFs:
 
    for the other challenges I googled resources that I needed such as how to make the onmouse up have multiple function calls.
 
-   Helpful resources were w2schools and stackoverflow.
+   Helpful resources were w3schools and stackoverflow.
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
 
