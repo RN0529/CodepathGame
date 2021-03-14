@@ -4,7 +4,7 @@
 
 Submitted by: **Richard Ngo**
 
-Time spent: **4** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Functionality
 
@@ -28,7 +28,7 @@ The following **optional** features are implemented:
 - [x] Player only loses after 3 mistakes (instead of on the first mistake)
 - [x] Game button appearance change goes beyond color (e.g. add an image)
 - [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
-- [ ] User has a limited amount of time to enter their guess on each turn
+- [x] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
 
@@ -41,9 +41,9 @@ Here's a walkthrough of implemented user stories:
 ![](https://i.imgur.com/LCkq0Vn.gif)
 
 My GIFs:
-
-![](https://i.imgur.com/CqvRWzJ.gif)
-![](https://i.imgur.com/PoBGJQl.gif)
+![](https://i.imgur.com/jXnzzSb.gif)
+![](https://i.imgur.com/hGcPsqA.gif)
+![](https://i.imgur.com/2WSKlhq.gif)
 
 ## Reflection Questions
 
@@ -51,7 +51,9 @@ My GIFs:
 
    For steps 1-10 I have only used the doc provided
 
-   for the other challenges I googled resources that I needed such as how to make the onmouse up have multiple function calls
+   for the other challenges I googled resources that I needed such as how to make the onmouse up have multiple function calls.
+
+   Helpful resources were w2schools and stackoverflow.
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words)
 
