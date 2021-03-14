@@ -13,6 +13,12 @@ var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
 
+var pic1 = document.getElementById("t");
+var pic2 = document.getElementById("g");
+var pic3 = document.getElementById("c");
+var pic4 = document.getElementById("bb");
+var pic5 = document.getElementById("db");
+
 function startGame() {
   context.resume();
   //initialize game variables
@@ -21,6 +27,11 @@ function startGame() {
   gamePlaying = true;
   // swap the Start and Stop buttons
   chances = 3;
+  pic1.classList.add("hidden");
+  pic2.classList.add("hidden");
+  pic3.classList.add("hidden");
+  pic4.classList.add("hidden");
+  pic5.classList.add("hidden");
 
   randArr(); // randomize pattern;
   console.log(pattern); //log pattern
@@ -131,6 +142,7 @@ function guess(btn) {
     //GAME OVER: LOSE!
     chances--;
     alert("Wrong! remaining guesses: " + chances);
+    hidePic(btn);
     if (chances == 0) {
       loseGame();
     }
@@ -169,12 +181,40 @@ function playTone(btn, len) {
   }, len);
 }
 function startTone(btn) {
+  if(btn==1){
+    pic1.classList.remove("hidden");
+  }else if(btn==2){
+    pic2.classList.remove("hidden");
+  }else if(btn==3){
+    pic3.classList.remove("hidden");
+  }else if(btn==4){
+    pic4.classList.remove("hidden");   
+  }else if(btn==5){
+    pic5.classList.remove("hidden");   
+  }
+  
   if (!tonePlaying) {
     o.frequency.value = freqMap[btn];
     g.gain.setTargetAtTime(volume, context.currentTime + 0.05, 0.025);
     tonePlaying = true;
   }
 }
+
+function hidePic(x){
+  if(x==1){
+    pic1.classList.add("hidden");
+  }else if(x==2){
+    pic2.classList.add("hidden");
+  }else if(x==3){
+    pic3.classList.add("hidden");
+  }else if(x==4){
+    pic4.classList.add("hidden");   
+  }else if(x==5){
+    pic5.classList.add("hidden");   
+  }
+}
+
+
 function stopTone() {
   g.gain.setTargetAtTime(0, context.currentTime + 0.05, 0.025);
   tonePlaying = false;

@@ -13,6 +13,8 @@ body {
     font-style: italic;
     color: #373fff;
     font-family: verdana, arial, sans-serif; 
+    text-decoration: underline;
+    
   }
   p{
     text-align: center;
@@ -43,7 +45,7 @@ body {
     margin:2px;
   }
   #button1 {
-      background: lightgreen;
+      background: rgb(200,131,225);
   }
   #button2 {
       background: lightblue;
@@ -59,7 +61,7 @@ body {
   }
   
   #button1:active, #button1.lit {
-      background:green;
+      background:purple;
   }
   #button2:active, #button2.lit{
       background:blue;
@@ -84,3 +86,7 @@ body {
   margin-top: 200px;
 }
   
+img{
+  height: 100px;
+  width: 100px;
+}
