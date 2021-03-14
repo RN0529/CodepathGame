@@ -32,6 +32,7 @@ body {
     justify-content: space-evenly;
   }
   #gameButtonArea{
+    margin-bottom:100px;
     margin-top:100px;
     display: flex;
     justify-content: space-evenly;
@@ -83,7 +84,7 @@ body {
 #name{
   font-size: 20px;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 150px;
 }
   
 img{
